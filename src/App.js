@@ -7,6 +7,8 @@ import Message from './view/message/index'
 import Course from './view/course/index'
 import Lecturer from './view/lecturer/index'
 
+import './common/css/style.css'
+
 class App extends Component {
   render() {
     return (

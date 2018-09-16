@@ -1,0 +1,217 @@
+@font-face {font-family: "iconfont";
+
+src:
+url('./font/iconfont.ttf?t=1536993325785') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+url('./font/iconfont.svg?t=1536993325785#iconfont') format('svg'); /* iOS 4.1- */
+
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+}
+.icon-zhuanshi:before { content: "\e6ad"; }
+
+.icon-feiji:before { content: "\e6ae"; }
+
+.icon-dianhua:before { content: "\e614"; }
+
+.icon-jiaolian1:before { content: "\e69d"; }
+
+.icon-liebiao:before { content: "\e602"; }
+
+.icon-boshimao1:before { content: "\e603"; }
+
+.icon-mima:before { content: "\e65b"; }
+
+.icon-renwu:before { content: "\e68e"; }
+
+.icon-Group-:before { content: "\e6a9"; }
+
+.icon-yonghu:before { content: "\e63f"; }
+
+
+html{
+    font-size: 13.3333vw;
+}
+body{
+    font-size: .3rem;
+    -webkit-text-size-adjust: none; /*文字缩放*/
+   /* 750px = 100vw;
+    100px = 100/7.5vw;
+    100px = 13.3333vw;
+    1rem=1html字体大小
+    */
+}
+body,h1,h2,h3,h4,p,dl,dd{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+}
+input,
+a{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);  /*按下时候会产生影印*/
+    -webkit-appearance: none;    /*按钮圆角*/
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+#header{
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: .9rem;
+    background: #323436;
+    z-index: 10;
+}
+.header-btn-left,
+.header-btn-right{
+    position: absolute;
+    top:0;
+    width: .9rem;
+    height:.9rem;
+    text-align: center;
+    line-height: .9rem;
+    color: white;
+    font-size: .5rem;
+}
+.header-btn-left{
+    left: 0;
+}
+.header-btn-right{
+    right: 0;
+}
+#login{
+    margin: .23rem auto 0;
+    display: block;
+    width: 1.84rem;
+}
+.header-user{
+    padding-left: .1rem ;
+    text-align: right;
+    overflow: hidden;
+    font-size: .26rem;
+    text-overflow: ellipsis;
+    color: white;
+}
+
+
+.miaov-content a:before{
+    position: absolute;
+    left:.37rem;
+    top:0;
+    font-size: .4rem;
+}
+.footer-nav nav a{
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    margin-top: .2rem;
+    font:.24rem/.26rem "\5B8B\4F53";
+    color: #adaeae;
+    padding-left: .37rem;
+    border-right: 1px solid #adaeae;
+}
+.footer-nav nav a:nth-of-type(4n){
+    border:none;
+}
+.footer-copy{
+    font: .24rem/.74rem "5FAE\8F6F\96C5\9ED1";
+    text-align: center;
+    color: #868b8d;
+    background: #2d2f30;
+}
+.page{
+    position: relative;
+    min-height: 90vh;
+    box-sizing: border-box;
+    padding-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+}
+.page-conent{
+    flex: 1;
+}
+#menu{
+    box-sizing: border-box;
+    position: fixed;
+    left:0;
+    top:0;
+    width: 4.5rem;
+    height: 100vh;
+    background: url("../../image/menu.png") no-repeat ;
+    /*background: red;*/
+    background-size: cover;
+    padding: 1.2rem .4rem;
+}
+#menu a{
+    display: block;
+    font: .3rem/.9rem "宋体";
+    border-bottom: 1px solid rgba(255,255,255, .3);
+    color: rgba(255,255,255, .8);
+}
+menu a:before{
+    font-size: .4rem;
+    margin: 0 .1rem;
+    color: rgba(255,255,255, .6);
+    vertical-align: middle;
+}
+#menu a:first-child{
+    border-top: 1px solid rgba(255,255,255, .3) ;
+}
+
+
+.tab{
+    position: relative;
+    overflow: hidden;
+}
+.banner .tabList{
+    width: 400vw;
+    overflow: hidden;
+}
+.tabList li{
+    float: left;
+    width: 100vw;
+}
+.banner .picList img{
+    width: 100vw;
+}
+.banner .picNav{
+    position: absolute;
+    left:0;
+    width:100vw;
+    bottom: .2rem;
+    height: .1rem;
+    text-align: center;
+}
+.banner .picNav span{
+    width: .3rem;
+    height: .1rem;
+    display: inline-block;
+    background: rgba(255,255,255,.5);
+    vertical-align: top;
+    margin: 0 .1rem;
+}
+.banner .picNav .active{
+    background: white;
+}
+.banner img{
+    height: 4.6rem;
+}
+
+
+
